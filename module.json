@@ -3,5 +3,5 @@
     "description": "allows changing channels by chat",
     "disableAutoUpdate": false,
     "name": "Channel Change",
-    "servers": ["https://raw.githubusercontent.com/SnowBunniez/Channel-Change/master/"]
+    "servers": ["https://raw.githubusercontent.com/NyluNyan/Channel-Change/master/"]
 }
