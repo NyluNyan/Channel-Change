@@ -1,8 +1,8 @@
-let chanx = 0,
-hook = [];
-
-module.exports = function ChannelChange(mod)
-{
+module.exports = function ChannelChange(mod) {
+	
+	let chanx = 0,
+	hook = [];
+	
 	mod.command.add(['ch', '!ch'], (cmd) =>
 	{
 		switch(cmd)
