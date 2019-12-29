@@ -36,11 +36,16 @@ module.exports = function ChannelChange(mod) {
 							}
 						}
 					}));
+					hook.push(mod.hook('S_ASK_TELEPORT', 1, (event) => 
+					{
+						mod.toServer('C_REPLY_TELEPORT', 1, {accept: 1});
+					}));
 					mod.command.message('Channel listening enabled');
 				}
 				else
 				{
 					mod.unhook(hook[0]);
+					mod.unhook(hook[1]);
 					hook = [];
 					mod.command.message('Channel listening disabled');
 				}
