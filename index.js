@@ -39,6 +39,7 @@ module.exports = function ChannelChange(mod) {
 					hook.push(mod.hook('S_ASK_TELEPORT', 1, (event) => 
 					{
 						mod.toServer('C_REPLY_TELEPORT', 1, {accept: 1});
+						return false;
 					}));
 					mod.command.message('Channel listening enabled');
 				}
